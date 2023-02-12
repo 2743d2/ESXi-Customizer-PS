@@ -315,7 +315,7 @@ if ($iZip -and !($update)) {
     } elseif ($v70) {
         Get-EsxImageprofile "ESXi-7.0*" -Softwaredepot $basedepot | foreach { $iplist += $_ }
     } elseif ($v67) {
-        Get-EsxImageprofile "ESXi-6.7*" -Softwaredepot $basedepot | foreach { $iplist += $_ }
+        Get-EsxImageprofile "ESXi-6.7*20220704001*" -Softwaredepot $basedepot | foreach { $iplist += $_ }
     } elseif ($v65) {
         Get-EsxImageprofile "ESXi-6.5*" -Softwaredepot $basedepot | foreach { $iplist += $_ }
     } elseif ($v60) {
